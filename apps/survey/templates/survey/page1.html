@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>이 시험을 통과 할 수 있을까?</title>
+</head>
+<body>
+    <div class="container">
+        <h1> 첫번째 관문은 잘 통과했군! </h1>
+        <h2> 이번에도 기회는 한번 뿐!!</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>첫번째 문제!</h2>
+                <form action="/answer2" method="POST">
+                    {% csrf_token %}
+                    <div class="radio">
+                        <label><input type="radio" name="optradio">김채령은 문호직을 사랑한다</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio">김채령은 문호직을 사랑하지 않는다</label>
+                    </div>
+                </form>
+            </div>
+                <div class="col-md-6">                            
+                
+            </div>
+        </div> 
+        <h2>두번째 문제!</h2>
+        <form action="/answer2" method="POST">
+            {% csrf_token %}
+            <div class="radio">
+                <label><input type="radio" name="optradio">김채령은 문호직의 얼굴을 매일 볼 자신이 있다</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">김채령은 문호직의 얼굴을 매일 볼 자신이 없다</label>
+            </div>
+        </form>
+        <h2>세번째 문제!</h2>
+        <form action="/answer2" method="POST">
+            {% csrf_token %}
+            <div class="radio">
+                <label><input type="radio" name="optradio">청개구리는 땡깡이와 함께라면 행복할 것 같다</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">청개구리는 땡깡이와 함께라면 행복할 것 같지않다</label>
+            </div>
+        </form>
+        <h2>네번째 문제!</h2>
+        <form action="/answer2" method="POST">
+            {% csrf_token %}
+            <div class="radio">
+                <label><input type="radio" name="optradio">청개구리는 땡깡이와 영원히 함께 하고싶다</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">청개구리는 땡깡이와 영원히 함께 하고싶지않다</label>
+            </div>
+        </form>
+        <h2>다섯번째 문제!</h2>
+        <form action="/answer2" method="POST">
+            {% csrf_token %}
+            <div class="radio">
+                <label><input type="radio" name="optradio">김채령은 문호직의 사랑스러운 아내가 되고싶다</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">김채령은 문호직의 사랑스러운 아내가 되고싶지않다</label>
+            </div>
+            <video width="320" height="240" autoplay>
+                    <source src="./static/audio/movie.mp4" type="video/mp4">
+            </video>
+            <br>
+            <h2>답을 잘 생각하고 고른거 맞지?</h2>
+            <input type="submit" value="제출">
+        </form>
+    </div>
+</body>
+</html>

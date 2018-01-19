@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>이 시험을 통과 할 수 있을까?</title>
+</head>
+<body>
+    <div class="container">
+        <h1> 이 시험을 통과하면 큰 보상이 있을 것이오!</h1>
+        <h2>주의사항! 기회는 단 한번 뿐이니 잘 생각하고 고르시오! 틀리면 큰일나오!</h2>
+        <h2>첫번째 문제!</h2>
+        <h3>땡깡이와 청개구리가 처음 만난 장소는?</h3>
+        <form action="/answer1" method="POST">
+            {% csrf_token %}
+            <div class="radio">
+                <label><input type="radio" name="optradio">올림픽공원</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">동대문디자인플라자(DDP)</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">지하철역</label>
+            </div>
+        </form>
+        <h2>두번째 문제!</h2>
+        <h3>우리가 함께 먹었던 첫 식사는 무엇인가?</h3>
+        <form action="/answer1" method="POST">
+            {% csrf_token %}
+            <div class="radio">
+                <label><input type="radio" name="optradio">피자 & 파스타</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">순두부찌개</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">새우요리</label>
+            </div>
+        </form>
+        <h2>세번째 문제!</h2>
+        <h3>청개구리와 땡깡이는 올림픽 공원에서 몇번 데이트를 했을까?</h3>
+        <form action="/answer1" method="POST">
+            {% csrf_token %}
+            <div class="radio">
+                <label><input type="radio" name="optradio">1번</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">2번</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">3번</label>
+            </div>
+        </form>
+        <h2>네번째 문제!</h2>
+        <h3>우리가 함께 헌혈했던 장소는?</h3>
+        <form action="/answer1" method="POST">
+            {% csrf_token %}
+            <div class="radio">
+                <label><input type="radio" name="optradio">강남역</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">잠실역</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">홍대입구역</label>
+            </div>
+        </form>
+        <h2>다섯번째 문제!</h2>
+        <h3>땡깡이가 두번째 데이트때 청개구리에게 주지 못하고 온 초콜렛은 무엇인가?</h3>
+        <form action="/answer1" method="POST">
+            {% csrf_token %}
+            <div class="radio">
+                <label><input type="radio" name="optradio">킷켓</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">M&M</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">트윅스</label>
+            </div>
+        </form>
+        <h2>여섯번째 문제!</h2>
+        <h3>청개구리가 울산으로 납치되서 먹었던 음식이 아닌것은?</h3>
+        <form action="/answer1" method="POST">
+            {% csrf_token %}
+            <div class="radio">
+                <label><input type="radio" name="optradio">낙지볶음</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">들깨칼국수</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">밀면</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">대게</label>
+            </div>
+        </form>
+        <h2>일곱번째 문제!</h2>
+        <h3>우리가 함께 하지 못했던 날은 언제인가?</h3>
+        <form action="/answer1" method="POST">
+            {% csrf_token %}
+            <div class="radio">
+                <label><input type="radio" name="optradio">크리스마스</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">할머니 침례식</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">채령이 생일</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">땡깡이 생일</label>
+            </div>
+        </form>
+        <h2>여덟번째 문제!</h2>
+        <h3>첫 데이트때 갔던 곳이 아닌 곳은 어디인가?</h3>
+        <form action="/answer1" method="POST">
+            {% csrf_token %}
+            <div class="radio">
+                <label><input type="radio" name="optradio">장미공원</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">석촌호수</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">나홀로나무</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">보쌈집</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">피자집</label>
+            </div>
+        </form>
+        <h2>아홉번째 문제!</h2>
+        <h3>땡깡이가 처음에 청개구리에게 어떤 말로 매력을 어필했는가?</h3>
+        <form action="/answer1" method="POST">
+            {% csrf_token %}
+            <div class="radio">
+                <label><input type="radio" name="optradio">난 귀여워</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">난 잘생겼어</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">난 유니크해</label>
+            </div>
+        </form>
+        <h2>열번째 문제!</h2>
+        <h3>땡깡이가 처음 청개구리네에 가서 먹은 야식은 무엇인가?</h3>
+        <form action="/answer1" method="POST">
+            {% csrf_token %}
+            <div class="radio">
+                <label><input type="radio" name="optradio">피자</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">치킨</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">족발</label>
+            </div>
+            <br>
+            <input type="submit" value="제출">
+        </form>
+    </div>
+</body>
+</html>
